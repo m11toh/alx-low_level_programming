@@ -7,7 +7,7 @@
  */
 
 int main(void)
-{ 
+{
 	int n, m, p;
 
 	for (n = 48; n < 58; n++)
@@ -31,6 +31,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
