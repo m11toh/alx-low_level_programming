@@ -8,38 +8,27 @@
 
 int main(void)
 { 
-	int digit1 = 0;
-	int digit2, digit3;
+	int n,m,p;
 
-	while (digit1 <= 9)
+	for (n = 48; n < 58; n++)
 	{
-		digit2 = 0;
-		while (digit2 <= 9)
+		for (m = 49; m < 58; m++)
 		{
-			digit3 = 0;
-			while (digit3 <= 9)
+			for (p = 50; P < 58; P++)
 			{
-				if (digit1 != digit2 && 
-				    digit1 < digit2 && 
-				    digit2 != digit3 && 
-				    digit2 < digit3)
+				if (p > m && m > n)
 				{
-					putchar(digit1 + 48);
-					putchar(digit2 + 48);
-					putchar(digit3 + 48);
-
-					if (digit1 + digit2 + digit3 != 24)
+					putchar(n);
+					putchar(m);
+					putchar(p);
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
-
 					}
 				}
-				digit3++;
 			}
-			digit2++;
 		}
-		digit1++;
 	}
 	putchar('\n');
 
